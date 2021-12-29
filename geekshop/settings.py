@@ -30,6 +30,7 @@ ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
+
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -38,7 +39,11 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "mainapp",
+    "authnapp",
 ]
+
+# Auth model
+AUTH_USER_MODEL = "authnapp.ShopUser"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
